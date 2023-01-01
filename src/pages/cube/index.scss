@@ -1,0 +1,166 @@
+html {
+  background-color: #5138be;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+body {
+  color: #ffffff;
+}
+
+.stage {
+  perspective: 1600px;
+  perspective-origin: 50% -50%;
+}
+
+figure {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  transform-origin: 50% 50% 0;
+  color: black;
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.1)));
+}
+
+.cube {
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+
+.front {
+  transform: rotateY(-35deg) translateZ(100px);
+}
+
+.back {
+  transform: rotateY(145deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) rotateZ(35deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) rotateZ(-35deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-125deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(55deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+figure:before,
+figure:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+figure:before {
+    background: #5138be;
+}
+figure:after {
+    background: #5138be;
+}
+
+.front:before {
+  animation: frontShading1 20s infinite linear;
+}
+
+@keyframes frontShading1 {
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.left:before {
+  animation: leftShading1 20s infinite linear;
+}
+
+@keyframes leftShading1 {
+    0% {
+        opacity: 0.4;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% { 
+        opacity: 0.4;
+    }
+}
+
+.back:before {
+  animation: backShading1 20s infinite linear;
+}
+
+@keyframes backShading1 {
+  0% {
+    opacity: 0.8;
+}
+  50% {
+    opacity: 0;
+}
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.right:before {
+  animation: rightShading1 20s infinite linear;
+}
+
+@keyframes rightShading1 {
+    0% {
+        opacity: 0.4;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.top:after {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  margin-left: -50%;
+  margin-top: -50%;
+  background: radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
+  animation: rotateTop 10s infinite linear;
+  transform: translate(50%, 50%);
+}
+
+.bottom {
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
+}
