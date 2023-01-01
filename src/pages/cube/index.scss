@@ -29,7 +29,7 @@ figure {
 
 .cube {
   transform-style: preserve-3d;
-  animation: rotate 20s infinite linear;
+  animation: rotate 10s infinite linear;
 }
 
 .front {
@@ -83,7 +83,7 @@ figure:after {
 }
 
 .front:before {
-  animation: frontShading1 20s infinite linear;
+  animation: frontShading1 10s infinite linear;
 }
 
 @keyframes frontShading1 {
@@ -93,7 +93,7 @@ figure:after {
 }
 
 .left:before {
-  animation: leftShading1 20s infinite linear;
+  animation: leftShading1 10s infinite linear;
 }
 
 @keyframes leftShading1 {
@@ -115,7 +115,7 @@ figure:after {
 }
 
 .back:before {
-  animation: backShading1 20s infinite linear;
+  animation: backShading1 10s infinite linear;
 }
 
 @keyframes backShading1 {
@@ -131,7 +131,7 @@ figure:after {
 }
 
 .right:before {
-  animation: rightShading1 20s infinite linear;
+  animation: rightShading1 10s infinite linear;
 }
 
 @keyframes rightShading1 {
