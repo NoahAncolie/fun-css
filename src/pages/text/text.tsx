@@ -3,8 +3,8 @@ import { ArrowNext, ArrowPrevious } from "../../reusables/arrows/arrows";
 import "./index.scss";
 
 interface TextProps {
-  previous: string
-  next: string
+  previous: string;
+  next: string;
 }
 
 interface TextState {}
@@ -26,7 +26,7 @@ export class Text extends React.Component<TextProps, TextState> {
               repellendus perferendis libero suscipit vitae in rem temporibus?
             </div>
             <div className="links">
-              <a href="https://qwant.com" target="_blank" className="a-a">
+              <a href="https://qwant.com" target="_blank" rel="noreferrer noopener" className="a-a">
                 Contact
               </a>
             </div>
@@ -40,7 +40,7 @@ export class Text extends React.Component<TextProps, TextState> {
               repellendus perferendis libero suscipit vitae in rem temporibus?
             </div>
             <div className="links">
-              <a href="https://qwant.com" target="_blank" className="a-b">
+              <a href="https://qwant.com" target="_blank" rel="noreferrer noopener" className="a-b">
                 qwant
               </a>
             </div>
@@ -54,7 +54,7 @@ export class Text extends React.Component<TextProps, TextState> {
               repellendus perferendis libero suscipit vitae in rem temporibus?
             </div>
             <div className="links">
-              <a href="https://qwant.com" target="_blank" className="a-c">
+              <a href="https://qwant.com" target="_blank" rel="noreferrer noopener" className="a-c">
                 S'inscrire
               </a>
             </div>

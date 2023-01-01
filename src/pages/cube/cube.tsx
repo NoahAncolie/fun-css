@@ -1,20 +1,15 @@
-import Icon from "@mdi/react";
 import React from "react";
-import { Link } from "react-router-dom";
 import { ArrowNext, ArrowPrevious } from "../../reusables/arrows/arrows";
 import "./index.scss";
 
 interface CubeProps {
-  previous: string
-  next: string
+  previous: string;
+  next: string;
 }
 
 interface CubeState {}
 
-export class Cube extends React.Component<
-  CubeProps,
-  CubeState
-> {
+export class Cube extends React.Component<CubeProps, CubeState> {
   constructor(props: CubeProps) {
     super(props);
     this.state = {};

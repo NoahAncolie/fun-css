@@ -9,10 +9,6 @@ interface ArrowProps {
 }
  
 export class ArrowNext extends React.Component<ArrowProps> {
-    constructor(props: ArrowProps) {
-        super(props);
-    }
-
     render() { 
         return ( 
             <Link to={this.props.uri} className="next arrow-link">
@@ -23,10 +19,6 @@ export class ArrowNext extends React.Component<ArrowProps> {
 }
 
 export class ArrowPrevious extends React.Component<ArrowProps> {
-    constructor(props: ArrowProps) {
-        super(props);
-    }
-    
     render() { 
         return ( 
             <Link to={this.props.uri} className="previous arrow-link">
