@@ -1,0 +1,32 @@
+.list-stage {
+    perspective: 1600px;
+    perspective-origin: 50% -50%;
+    -webkit-perspective-origin: 50% -50%;
+    width: 500px;
+    height: 500px;
+}
+
+.list-stage ul {
+    transform-style: preserve-3d;
+    transform: rotateY(35deg) rotateX(-0deg);
+    list-style: none;
+}
+
+.list-stage ul li {
+    height: 3vw;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+}
+
+.stair-top {
+    transform: rotateX(90deg);
+}
+
+.stair-side {
+    transform: translateZ(1.5vw) translateY(-1.5vw);
+}
+
+.stair-top-2 {
+    transform: rotateX(90deg) translateZ(3vw) translateY(3vw);
+}

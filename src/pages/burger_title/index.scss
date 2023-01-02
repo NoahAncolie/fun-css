@@ -1,0 +1,51 @@
+.title-stage {
+    perspective: 1600px;
+    perspective-origin: 50% -50%;
+    -webkit-perspective-origin: 50% -50%;
+}
+
+.title-element {
+    transform-style: preserve-3d;
+    transform: rotateX(40deg) rotateY(20deg) rotateZ(-15deg) translateZ(300px) translateY(100px) translateX(-50px);
+    position: relative;
+    width: 60vw;
+    height: 40vh;
+    background-color: #5138be;
+}
+
+.burger-title-shadow {
+    font-size: 7vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff42;
+    text-shadow: 0px 4px 4px #543dbe, 0 0 0 rgba(0, 0, 0, 1), 0px 4px 4px #543dbe;
+}
+
+.burger-title-light {
+    font-size: 7vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: ease-in-out 0.5s;
+}
+
+.burger-title-dark {
+    font-size: 7vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.title-element:hover .burger-title-dark {
+    transform: rotateX(25deg);
+    color: #4730ab;
+}
+
+.title-element:hover .burger-title-light {
+    transform: rotateX(-25deg);
+    color: #5e41db;
+}

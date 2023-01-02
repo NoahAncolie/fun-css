@@ -18,7 +18,7 @@ export class Text extends React.Component<TextProps, TextState> {
   render() {
     return (
       <div className="page">
-        <div className="stage">
+        <div className="card-stage">
           <div className="card card-a">
             <h1>Un problème ?</h1>
             <div className="content">
@@ -32,7 +32,7 @@ export class Text extends React.Component<TextProps, TextState> {
             </div>
           </div>
         </div>
-        <div className="stage">
+        <div className="card-stage">
           <div className="card card-b">
             <h1>Hello world...</h1>
             <div className="content">
@@ -46,7 +46,7 @@ export class Text extends React.Component<TextProps, TextState> {
             </div>
           </div>
         </div>
-        <div className="stage">
+        <div className="card-stage">
           <div className="card card-c">
             <h1>La solution !</h1>
             <div className="content">
