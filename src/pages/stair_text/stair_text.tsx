@@ -16,13 +16,9 @@ export class StairText extends React.Component<StairTextProps, StairTextState> {
   }
   render() {
     return (
-      <div className="page">
-        <div className="list-stage">
-            <ul>
-                <li className="stair-top"> Une Marche</li>
-                <li className="stair-side"> Un côté</li>
-                <li className="stair-top-2"> Le bas</li>
-            </ul>
+      <div className="window-page">
+        <div className="window-stage">
+          <h1>Having fun with CSS</h1>
         </div>
         <ArrowNext uri={this.props.next} />
         <ArrowPrevious uri={this.props.previous} />

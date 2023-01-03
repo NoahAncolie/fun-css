@@ -1,32 +1,35 @@
-.list-stage {
+.window-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-stage {
     perspective: 1600px;
     perspective-origin: 50% -50%;
     -webkit-perspective-origin: 50% -50%;
-    width: 500px;
-    height: 500px;
 }
 
-.list-stage ul {
-    transform-style: preserve-3d;
-    transform: rotateY(35deg) rotateX(-0deg);
-    list-style: none;
+.window-stage h1 {
+    font-size: 10vw;
+    transform: translate(-10px, -10px);
+    text-shadow: 
+        1px 1px 1px #b3a6ec,
+        2px 2px 1px #b3a6ec,
+        3px 3px 1px #b3a6ec,
+        4px 4px 1px #b3a6ec,
+        5px 5px 1px #b3a6ec,
+        6px 6px 1px #b3a6ec,
+        7px 7px 1px #b3a6ec,
+        8px 8px 1px #b3a6ec,
+        9px 9px 1px #b3a6ec,
+    ;
+    transition: 0.5s ease-in-out;
 }
 
-.list-stage ul li {
-    height: 3vw;
-    font-size: 3vw;
-    margin: 0;
-    padding: 0;
-}
-
-.stair-top {
-    transform: rotateX(90deg);
-}
-
-.stair-side {
-    transform: translateZ(1.5vw) translateY(-1.5vw);
-}
-
-.stair-top-2 {
-    transform: rotateX(90deg) translateZ(3vw) translateY(3vw);
+.window-stage h1:hover {
+    transform: translate(0px, 0px);
+    text-shadow: none;
 }
